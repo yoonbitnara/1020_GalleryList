@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url(style_reset.css);
+
+div#headerArea {
+
+    width: 100%;
+    padding: 2px 0;
+
+    background-color: #f1e7d5;
+    margin-bottom: 48px;
+
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+header#header {
+    
+    width: 1000px;
+    margin: 0 auto;
+
+    justify-content: space-between;
+}
+
+/* div#headerLogoArea 시작 */
+#headerArea #headerLogoArea {
+
+    margin-top: 66px;
+}
+/* div#headerLogoArea 끝 */
+
+/* div#headerArea nav#headerLnb 시작 */
+#headerArea nav#headerLnb {
+
+
+    margin: 16px 0;
+}
+#headerArea nav#headerLnb li>a {
+
+    font-size: 12px;
+    margin: 0 6px;
+    color: #5f4a38;
+}
+
+#headerArea div#cartNlistMenu {
+
+    justify-content: space-between;
+    align-items: center;
+    margin: 31px 0 38px;
+    
+    
+}
+
+#headerArea div#cartLink {
+
+    width: 48px;
+    height: 36px;
+
+    background-image: url(../images/btn_cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px 36px;
+
+}
+
+#headerArea #cartLink span#cartGoodsCnt {
+
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    background-color: #0024ff;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 14px;
+}
+
+#headerArea div#sideMenu {
+
+    width: 40px;
+    height: 40px;
+}
+
+#headerArea div#sideMenu span {
+
+    width: 100%;
+    height: 2px;
+    margin: 10px 0 9px;
+    background-color: #5f4a38;
+    display: block;
+}
+
+#headerArea div#sideMenu span:nth-child(2) {
+    width: 70%;
+}
+
+#headerArea div#sideMenu span:nth-child(3) {
+    width: 40%;
+}
+/* div#headerArea nav#headerLnb 끝 */
+
+/* div#wrap 시작 */
+div#wrap {
+
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+#wrap div#goodsPart {
+
+    color: #5f4a38;
+    font-size: 19px;
+    font-family: batang;
+    margin-bottom: 36px;
+}
+
+#wrap main#galleryListArea {
+
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* tabel.goodsTbl 상품 출력용 테이블 시작 */
+
+#wrap main#galleryListArea>table {
+
+    text-align: center;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+#wrap main#galleryListArea>table td {
+
+    color: #5f4a38;
+    padding: 3px 0;
+}
+
+#wrap main#galleryListArea>table td.goodsName {
+
+}
+
+#wrap main#galleryListArea>table td.goodsDesc {
+
+    font-size: 12px;
+    color: rgba(95, 74, 56, 0.68);
+    
+}
+
+#wrap main#galleryListArea>table td.goodsPrice span {
+
+    font-size: 14px;
+}
+
+#wrap main#galleryListArea>table td.goodsPrice span::after {
+
+    content: "원";
+}
+
+#wrap main#galleryListArea>table span.basicPrice {
+
+    text-decoration: line-through;
+    color: rgba(95, 74, 56, 0.68);
+    margin-right: 4px;
+    
+}
+
+#wrap main#galleryListArea>table span.salePrice {
+
+    font-weight: bold;
+    color: #715844;
+    
+}
+
+#wrap main#galleryListArea>table span.replyCnt {
+    
+    color: #715844;
+    width: 82px;
+    height: 19px;
+    font-size: 13px;
+    line-height: 19px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    display: inline-block;
+    background-color: #f1e7d5;
+}
+
+#wrap main#galleryListArea>table span.replyCnt::before {
+
+    content: "RE: ";
+}
+
+/* tabel.goodsTbl 상품 출력용 테이블 끝 */
+/* div#wrap 끝 */
+
+/* div#pagingArea페이징 시작 */
+div#pagingArea {
+
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+div#pagingArea div.pageBox {
+
+    text-align: center;
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+    
+    /* cursor: pointer; */
+}
+
+div#pagingArea div.pageBox a {
+
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #999;
+    font-size: 12.5px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div#pagingArea div.pageNum {
+    
+    border: 1px solid #ccc;
+    transform: translateY(2px);
+    
+}
+
+div#pagingArea div.pageBox:not(:last-child) {
+
+    border-right: none;
+}
+
+div#pagingArea div.nowPage a {
+
+    color: #555;
+    border-bottom: 3px solid #555;
+}
+
+div#pagingArea div.pageNum:hover {
+    
+    background-color: #eee;
+
+}
+/* div#pagingArea페이징 끝 */
